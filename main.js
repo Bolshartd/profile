@@ -1,15 +1,4 @@
-// let myVar = 'My name is Intensive';
-
-// myVar = [11,22,33,44,55];
-
-// const myOtherVar = myVar[2]
-
-// const myFanction = (name) => {
-//     alert('Hello ' + name + '!')
-// }
-
-// myFanction('Makar')
-
+// hero carules
 const MENU_LINK = document.querySelectorAll('.header__menu-link')
 
 MENU_LINK.forEach(link => link.addEventListener('click', event => {
@@ -23,6 +12,7 @@ MENU_LINK.forEach(link => link.addEventListener('click', event => {
     });
 }))
 
+// hero switched dots
 const HERO_DOTS = document.querySelectorAll('.hero__dot');
 const HERO_TITLE = document.querySelector('.hero__title');
 const HERO_SUBTITLE = document.querySelector('.hero__subtitle');
@@ -50,7 +40,7 @@ HERO_DOTS.forEach((dot, index) => dot.addEventListener('click', event => {
     HERO_SUBTITLE.textContent = HERO_SUBTITLES[index]
 }));
 
-
+// features buttons
 const TABS = document.querySelectorAll(".tab");
 const TABS_TITLE = document.querySelector(".tabs__title");
 
@@ -69,3 +59,12 @@ TABS.forEach((tab, index) => tab.addEventListener('click', event => {
 
     TABS_TITLE.textContent = TABS_TITLES[index];
 }));
+
+// burger menu
+$(document).ready(function() {
+	$('.menu-burger__header').click(function(){
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header__menu').toggleClass('open-menu');
+        $('body').toggleClass('fixed-page');
+	});
+});
