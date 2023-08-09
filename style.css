@@ -373,9 +373,6 @@ img[alt="vkontakte"] {
 		transition: 0.4s;
         background: rgba(230, 191, 86, 0.87);
 	}
-    .header__menu-link {
-        font-size: 18px;
-    }
     .header__menu {
 		position: fixed;
 		top:100px;
@@ -396,12 +393,12 @@ img[alt="vkontakte"] {
 		right: 0;
 	}
 	.header__menu-list li {
-		margin: 10px 10px 0 10px;
+		margin: 20px 10px 0 10px;
 	}
     .header__menu-link {
-        font-size: 10px;
+        font-size: 18px;
         margin-left: 0px;
-        line-height: 20px;
+        line-height: 30px;
       }
     .header__menu {
         top: 80px;
@@ -497,7 +494,6 @@ img[alt="vkontakte"] {
         margin: 5px auto 0 auto;
     }
     .tab:hover {
-        font-size: 16px;
         transition: font-size 0.8s;
     }
     .tabs__title {
@@ -528,7 +524,7 @@ img[alt="vkontakte"] {
     }
     .benefits__item + .benefits__item {
         margin-left: 0px;
-      }
+    }
     .benefits__date {
         width: 200px;
         height: 160px;
@@ -543,14 +539,11 @@ img[alt="vkontakte"] {
         cursor: pointer;
         margin: 0 auto;
     }
-    .benefits__date:active img {
-        margin-top: -30px;
-    }
-    .benefits__date:active {
+    .benefits__date-active {
         width: 220px;
         z-index: 21;
     }
-    .benefits__date::before {
+    .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
         bottom: 8px;
@@ -566,6 +559,9 @@ img[alt="vkontakte"] {
         z-index: 10;
         transition: all .4s;
         margin: 0 auto 20px;
+    }
+    .benefits__date-active img {
+        margin-top: -30px;
     }
     .benefits__item-title {
         height: auto;
@@ -591,8 +587,8 @@ img[alt="vkontakte"] {
         font-size: 12px;
     }
     .footer__icon + .footer__icon {
-        margin-left: 14px;
-      }
+        margin-left: 20px;
+    }
     
 }
 
@@ -659,7 +655,7 @@ img[alt="vkontakte"] {
 	}
     .header__menu {
 		position: fixed;
-		top:100px;
+		top:80px;
 		background: #424A57;
 		box-shadow: #ccc;
 		width: 50%;
@@ -772,7 +768,6 @@ img[alt="vkontakte"] {
         margin: 10px auto;
     }
     .tab:hover {
-        font-size: 19px;
         transition: font-size 0.8s;
     }
     .tabs__title {
@@ -827,14 +822,14 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin: 0 auto 30px;
     }
-    .benefits__date:active img {
+    .benefits__date-active img {
         margin-top: -30px;
     }
-    .benefits__date:active {
+    .benefits__date-active {
         width: 320px;
         z-index: 21;
     }
-    .benefits__date::before {
+    .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
         bottom: 8px;

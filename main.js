@@ -1,3 +1,12 @@
+// burger menu
+$(document).ready(function() {
+	$('.menu-burger__header').click(function(){
+        $('.menu-burger__header').toggleClass('open-menu');
+        $('.header__menu').toggleClass('open-menu');
+        $('body').toggleClass('fixed-page');
+	});
+});
+
 // hero carules
 const MENU_LINK = document.querySelectorAll('.header__menu-link')
 
@@ -60,11 +69,15 @@ TABS.forEach((tab, index) => tab.addEventListener('click', event => {
     TABS_TITLE.textContent = TABS_TITLES[index];
 }));
 
-// burger menu
-$(document).ready(function() {
-	$('.menu-burger__header').click(function(){
-        $('.menu-burger__header').toggleClass('open-menu');
-        $('.header__menu').toggleClass('open-menu');
-        $('body').toggleClass('fixed-page');
-	});
-});
+// benefits images
+$(".benefits__date img[alt='liebherr']").click(function() {
+    $('.benefits__date[data-name="Июнь 2015 — Ноябрь 2022"]').toggleClass('benefits__date-active');
+  });
+
+  $(".benefits__date img[alt='dpc']").click(function() {
+    $('.benefits__date[data-name="Октябрь 2012 — Май 2015"]').toggleClass('benefits__date-active');
+  });
+
+  $(".benefits__date img[alt='nipom']").click(function() {
+    $('.benefits__date[data-name="Февраль 2012 — Сентябрь 2012"]').toggleClass('benefits__date-active');
+  });
