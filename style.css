@@ -285,6 +285,9 @@ p {
     color: #FFFFFF;
 }
 
+.footer__social {
+    display: inline-flex;
+}
 .footer__icon {
     display: inline-flex;
     justify-content: center;
@@ -307,13 +310,12 @@ p {
 }
 
 .footer__icon:active {
-    background-color: rgba(146, 108, 3, 0.87)
+    background-color: rgba(146, 108, 3, 0.87);
 }
 
 img[alt="vkontakte"] {
     scale: 65%;
 }
-
 @media (min-width: 0px) and (max-width: 575.98px) {
     .app__header {
         height: 80px;
@@ -328,6 +330,9 @@ img[alt="vkontakte"] {
         width: auto;
         height: 50px;
         margin-top: 15px;
+    }
+    .header__menu-link:hover {
+        color: #E1E1E1;
     }
     .menu-burger__header {
 		position: relative;
@@ -458,6 +463,15 @@ img[alt="vkontakte"] {
         height: 12px;
         border: 1px solid rgba(221, 164, 7, 0.87);
     }
+    .hero__button:hover {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
+    .hero__dot:hover, .hero__dot.active {
+        background-color: #fff;
+    }
+    .hero__dot.active {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
     section.features {
         margin-bottom: 10px;
     }
@@ -494,7 +508,12 @@ img[alt="vkontakte"] {
         margin: 5px auto 0 auto;
     }
     .tab:hover {
-        transition: font-size 0.8s;
+        color: #424A5780;
+        border-bottom: none;
+    }
+    .tab.active {
+        color: rgba(221, 164, 7, 0.87);
+        border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
     .tabs__title {
         text-align: center;
@@ -583,6 +602,12 @@ img[alt="vkontakte"] {
         width: 25px;
         height: 25px;
     }
+    .footer__icon:hover {
+        background-color: #FFFFFF;
+    }   
+    .footer__icon:active {
+        background-color: #FFFFFF;
+    }
     .footer__copyright {
         font-size: 12px;
     }
@@ -606,6 +631,9 @@ img[alt="vkontakte"] {
         width: auto;
         height: 60px;
         margin-top: 10px;
+    }
+    .header__menu-link:hover {
+        color: #E1E1E1;
     }
     .menu-burger__header {
 		position: relative;
@@ -732,6 +760,15 @@ img[alt="vkontakte"] {
         height: 16px;
         border: 2px solid rgba(221, 164, 7, 0.87);
     }
+    .hero__button:hover {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
+    .hero__dot:hover, .hero__dot.active {
+        background-color: #fff;
+    }
+    .hero__dot.active {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
     section.features {
         margin-bottom: 0px;
     }
@@ -768,7 +805,12 @@ img[alt="vkontakte"] {
         margin: 10px auto;
     }
     .tab:hover {
-        transition: font-size 0.8s;
+        color: #424A5780;
+        border-bottom: none;
+    }
+    .tab.active {
+        color: rgba(221, 164, 7, 0.87);
+        border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
     .tabs__title {
         text-align: center;
@@ -856,6 +898,12 @@ img[alt="vkontakte"] {
         width: 30px;
         height: 30px;
     }
+    .footer__icon:hover {
+        background-color: #FFFFFF;
+    }   
+    .footer__icon:active {
+        background-color: #FFFFFF;
+    }
     .footer__copyright {
         font-size: 16px;
     }
@@ -866,6 +914,9 @@ img[alt="vkontakte"] {
         width: auto;
         height: 70px;
         margin-top: 15px;
+    }
+    .header__menu-link:hover {
+        color: #E1E1E1;
     }
     .menu-burger__header {
 		position: relative;
@@ -989,6 +1040,15 @@ img[alt="vkontakte"] {
         height: 16px;
         border: 2px solid rgba(221, 164, 7, 0.87);
     }
+    .hero__button:hover {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
+    .hero__dot:hover, .hero__dot.active {
+        background-color: #fff;
+    }
+    .hero__dot.active {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
     section.features {
         margin-bottom: 0px;
     }
@@ -1025,8 +1085,12 @@ img[alt="vkontakte"] {
         margin: 10px auto;
     }
     .tab:hover {
-        font-size: 23px;
-        transition: font-size 0.8s;
+        color: #424A5780;
+        border-bottom: none;
+    }
+    .tab.active {
+        color: rgba(221, 164, 7, 0.87);
+        border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
     .tabs__title {
         text-align: center;
@@ -1080,14 +1144,14 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin: 0 auto 30px;
     }
-    .benefits__date:active img {
+    .benefits__date-active img {
         margin-top: -30px;
     }
-    .benefits__date:active {
+    .benefits__date-active {
         width: 350px;
         z-index: 21;
     }
-    .benefits__date::before {
+    .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
         bottom: 8px;
@@ -1114,6 +1178,12 @@ img[alt="vkontakte"] {
         width: 30px;
         height: 30px;
     }
+    .footer__icon:hover {
+        background-color: #FFFFFF;
+    }   
+    .footer__icon:active {
+        background-color: #FFFFFF;
+    }
     .footer__copyright {
         font-size: 16px;
     }
@@ -1122,6 +1192,9 @@ img[alt="vkontakte"] {
 @media (min-width: 992px) and (max-width: 1199.98px){
     .header__menu-link {
         font-size: 20px;
+    }
+    .header__menu-link:hover {
+        color: #E1E1E1;
     }
     section.hero {
         margin-bottom: 60px;
@@ -1154,6 +1227,15 @@ img[alt="vkontakte"] {
         width: 22px;
         height: 22px;
     }
+    .hero__button:hover {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
+    .hero__dot:hover, .hero__dot.active {
+        background-color: #fff;
+    }
+    .hero__dot.active {
+        background-color: rgba(221, 164, 7, 0.87);
+    }
     section.features {
         margin-bottom: 60px;
     }
@@ -1172,6 +1254,14 @@ img[alt="vkontakte"] {
     .tabs__title {
         line-height: 1.5;
         font-size: 16px;
+    }
+    .tab:hover {
+        color: #424A5780;
+        border-bottom: none;
+    }
+    .tab.active {
+        color: rgba(221, 164, 7, 0.87);
+        border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
     section.benefits {
         margin-bottom: 60px;
@@ -1204,14 +1294,14 @@ img[alt="vkontakte"] {
         z-index: 10;
         transition: all .4s;
     }
-    .benefits__date:hover img {
+    .benefits__date-active img {
         margin-top: -30px;
     }
-    .benefits__date:hover{
+    .benefits__date-active {
         width: 290px;
         z-index: 21;
     }
-    .benefits__date::before {
+    .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
         bottom: 8px;
@@ -1239,6 +1329,12 @@ img[alt="vkontakte"] {
     .footer__icon {
         width: 40px;
         height: 40px;
+    }
+    .footer__icon:hover {
+        background-color: #FFFFFF;
+    }   
+    .footer__icon:active {
+        background-color: #FFFFFF;
     }
 }
 
