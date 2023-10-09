@@ -15,7 +15,7 @@ img {
 }
 
 section {
-    margin-bottom: 85px;
+    margin-bottom: 50px;
 }
 
 p {
@@ -114,17 +114,18 @@ p {
 
 .hero__title {
     font-weight: 700;
-    font-size: 54px;
+    font-size: 40px;
     line-height: 64px;
     color: #424A57;
 }
 
+
 .hero__subtitle {
     margin-top: 32px;
     font-weight: 400;
-    font-size: 27px;
+    font-size: 22px;
     line-height: 38px;
-    white-space: pre-wrap
+    white-space: pre-wrap;
 }
 
 .hero__button {
@@ -197,11 +198,36 @@ p {
     border-bottom: 1px solid #424A5780;
 }
 
-.features__tabs {
+.features__list {
     width: calc(100% / 3);
     display: flex;
     align-items: flex-start;
     white-space: nowrap;
+}
+.skills__format {
+    width: 1240px;
+    height: 44px;
+    border-bottom: 1px solid #424A5780;
+    margin-bottom: 20px;
+}
+.skills__buttons {
+    width: 40%;
+}
+h2.skills__list {
+    font-weight: 700;
+    font-size: 24px;
+    color: #424A5780;
+}
+.skills__buttons button {
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #93979e;
 }
 
 .tab + .tab {
@@ -220,12 +246,14 @@ p {
 .tab.active {
     color: rgba(221, 164, 7, 0.87);
     border-bottom: 1px solid rgba(221, 164, 7, 0.87);
-    padding-bottom: 19px;
+    padding-bottom: 16px;
 }
 .tabs__title {
     line-height: 2;
     margin-top: 20px;
     white-space: pre-wrap;
+    display: inline-flex;
+    margin-bottom: 20px;
 }
 
 .benefits__title {
@@ -234,6 +262,27 @@ p {
     font-size: 48px;
     line-height: 60px;
     color: #424A57;
+}
+
+.benefits__date-title {
+    position: absolute;
+    z-index: 20;
+    width: 334px;
+    height: 265px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 105px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    transition: all .4s;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.benefits__date-title:hover {
+    margin-top: -30px;
 }
 
 .benefits__list {
@@ -266,7 +315,13 @@ p {
     line-height: 28px;
     color: rgba(0, 0, 0, 0.87);
 }
-
+.benefits__item-capture a {
+    color: rgba(221, 164, 7, 0.87);
+    font-weight: bold;
+}
+.benefits__item-capture a:hover {
+    color: rgba(230, 191, 86, 0.87);
+}
 
 .footer {
     padding: 47px 0;
@@ -428,9 +483,9 @@ img[alt="vkontakte"] {
         height: auto;
     }
     .hero__figure {
-        width: 100%;
+        width: 70%;
         height: 100%;
-        margin: 0 auto;
+        margin: 0 auto 20px;
     }
     .hero__text {
         width: 100%;

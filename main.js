@@ -17,7 +17,8 @@ MENU_LINK.forEach(link => link.addEventListener('click', event => {
 
     document.querySelector(id).scrollIntoView({
       behavior: 'smooth',
-      block: "center"
+      block: "center",
+      inline: "start"
     });
 }))
 
@@ -52,11 +53,10 @@ HERO_DOTS.forEach((dot, index) => dot.addEventListener('click', event => {
 // features buttons
 const TABS = document.querySelectorAll(".tab");
 const TABS_TITLE = document.querySelector(".tabs__title");
-
+ 
 const TABS_TITLES = [
-    'Python-разработчик (ML, Data Scientist)\nАкадемия Цифрового Образования ООО «Мобильное Электронное Образование»,\nPython-разработчик, май 2023',
-    'Изучаю Python, есть репозитории на GitHub - https://github.com/Bolshartd.\n\nПримеры репозиториев:\nhttps://github.com/Bolshartd/profile - интерактивное резюме\nhttps://github.com/Bolshartd/test_parsing - парсинг сайта\nhttps://github.com/Bolshartd/study_task - ML. Развертывание приложения в Docker контейнере. Определение схожести слов по смыслу.\nhttps://github.com/Bolshartd/move_detector - Определение движения на веб камере без спользования ИИ.\nhttps://github.com/Bolshartd/evaluation_quality - Оценка качества лакокрасочного покрытия производственных деталей с использованием ИИ\nhttps://github.com/Bolshartd/covid_analyse - Анализ и кластеризация данных по covid-19',
-    'Изучение литературы:\n1.Pro Git /Scott Chacon and Ben Straub/\n2.Начинаем программировать на Python /Тони Гэддис/\n\nДополнительное изучение:\n1.Проект "Феникс" / Джин Ким, Кевин Бер, Джордж Спаффорд/\n2.Изучаю лекции MIT OpenCourseWare:\nhttps://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA\n3.Прохождение интенсивов SkillFactory (тестирование, frontend-разработка)\n4.Изучение курса от KTS Metaclass (Начинающий Backend разработчик на Python)',
+    TABS_TITLE.textContent,
+    'Есть репозитории на GitHub - https://github.com/Bolshartd.\n\nПримеры репозиториев:\nhttps://github.com/Bolshartd/profile - сайт визитка\nhttps://github.com/Bolshartd/test_parsing - парсинг сайта\nhttps://github.com/Bolshartd/study_task - ML. Развертывание приложения в Docker контейнере. Определение схожести слов по смыслу.\nhttps://github.com/Bolshartd/move_detector - Определение движения на веб камере без спользования ИИ.\nhttps://github.com/Bolshartd/evaluation_quality - Оценка качества лакокрасочного покрытия производственных деталей с использованием ИИ\nhttps://github.com/Bolshartd/covid_analyse - Анализ и кластеризация данных по covid-19',
 ];
 
 TABS.forEach((tab, index) => tab.addEventListener('click', event => {
