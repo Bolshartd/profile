@@ -72,12 +72,21 @@ TABS.forEach((tab, index) => tab.addEventListener('click', event => {
 // benefits images
 $(".benefits__date img[alt='liebherr']").click(function() {
     $('.benefits__date[data-name="Июнь 2015 — Ноябрь 2022"]').toggleClass('benefits__date-active');
-  });
+});
 
-  $(".benefits__date img[alt='dpc']").click(function() {
+$(".benefits__date img[alt='dpc']").click(function() {
     $('.benefits__date[data-name="Октябрь 2012 — Май 2015"]').toggleClass('benefits__date-active');
-  });
+});
 
-  $(".benefits__date img[alt='nipom']").click(function() {
+$(".benefits__date img[alt='nipom']").click(function() {
     $('.benefits__date[data-name="Февраль 2012 — Сентябрь 2012"]').toggleClass('benefits__date-active');
-  });
+});
+
+$(".benefits__date img[alt='shpalann']").click(function() {
+    $('.benefits__date[data-name="Июнь 2023 — н.в."]').toggleClass('benefits__date-active');
+});
+
+$(".benefits__date-title").click(function() {
+    $('.benefits__date-title').toggleClass('benefits__date-active');
+    $('.benefits__date[data-name="Сентябрь 2022 — н.в."]').toggleClass('benefits__date-active');
+});

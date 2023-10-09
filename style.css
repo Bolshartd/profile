@@ -93,8 +93,8 @@ p {
 }
 
 .hero__figure {
-    width: 50%;
-    height: 450px;
+    width: 40%;
+    height: 100%;
     margin-right: 60px;
     background-color: #D9D9D9;
     border-radius: 20px;
@@ -211,7 +211,7 @@ p {
     margin-bottom: 20px;
 }
 .skills__buttons {
-    width: 40%;
+    width: 70%;
 }
 h2.skills__list {
     font-weight: 700;
@@ -219,11 +219,11 @@ h2.skills__list {
     color: #424A5780;
 }
 .skills__buttons button {
-    height: 40px;
+    height: 50px;
     width: auto;
     margin-top: 10px;
     margin-right: 10px;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     background: #ffffff;
     border-radius: 5px;
@@ -318,6 +318,7 @@ h2.skills__list {
 .benefits__item-capture a {
     color: rgba(221, 164, 7, 0.87);
     font-weight: bold;
+    text-decoration: none;
 }
 .benefits__item-capture a:hover {
     color: rgba(230, 191, 86, 0.87);
@@ -545,6 +546,27 @@ img[alt="vkontakte"] {
         display: block;
         white-space: normal;
     }
+    .skills__format {
+        width: 130px;
+        margin: 5px auto 0 auto;
+        height: 22px;
+    }
+    h2.skills__list {
+        text-align: center;
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    .skills__buttons {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .skills__buttons button {
+        height: 30px;
+        font-size: 12px;
+    }
     .tab {
         text-align: center;
         display: block;
@@ -575,8 +597,9 @@ img[alt="vkontakte"] {
         display: block;
         line-height: 15px;
         font-size: 12px;
-        margin-top: 35px;
-        padding: 10px 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0;
     }
     section.benefits {
         margin-bottom: 10px;
@@ -598,6 +621,28 @@ img[alt="vkontakte"] {
     }
     .benefits__item + .benefits__item {
         margin-left: 0px;
+    }
+    .benefits__date-title {
+        width: 200px;
+        height: 160px;
+        font-size: 18px;
+        padding-top: 55px;
+    }
+    .benefits__date-title.benefits__date-active  {
+        margin-top: -30px;
+        width: 200px;
+        height: 160px;
+        font-size: 18px;
+        padding-top: 55px;
+    }
+    .benefits__date-title:hover {
+        margin-top: 0;
+    }
+    .benefits__date-title.benefits__date-active:hover {
+        margin-top: -30px;
+    }
+    .benefits__item-capture a:hover {
+        color: rgba(221, 164, 7, 0.87);
     }
     .benefits__date {
         width: 200px;
@@ -780,7 +825,7 @@ img[alt="vkontakte"] {
         height: auto;
     }
     .hero__figure {
-        width: 100%;
+        width: 70%;
         height: 100%;
         margin: 0 auto;
     }
@@ -842,6 +887,27 @@ img[alt="vkontakte"] {
         display: block;
         white-space: normal;
     }
+    .skills__format {
+        width: 130px;
+        margin: 5px auto 0 auto;
+        height: 22px;
+    }
+    h2.skills__list {
+        text-align: center;
+        font-size: 18px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    .skills__buttons {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .skills__buttons button {
+        height: 40px;
+        font-size: 14px;
+    }
     .tab {
         text-align: center;
         display: block;
@@ -872,8 +938,8 @@ img[alt="vkontakte"] {
         display: block;
         line-height: 20px;
         font-size: 14px;
-        margin-top: 50px;
-        padding: 10px 0 20px;
+        margin-top: 20px;
+        padding: 10px 0 10px;
     }
     section.benefits {
         margin-bottom: 30px;
@@ -895,6 +961,26 @@ img[alt="vkontakte"] {
     }
     .benefits__item + .benefits__item {
         margin-left: 0px;
+    }
+    .benefits__date-title {
+        width: 300px;
+        height: 260px;
+        font-size: 22px;
+        padding-top: 105px;
+    }
+    .benefits__date-title.benefits__date-active {
+        margin-top: -30px;
+        width: 300px;
+        height: 260px;
+    }
+    .benefits__date-title:hover {
+        margin-top: 0;
+    }
+    .benefits__date-title.benefits__date-active:hover {
+        margin-top: -30px;
+    }
+    .benefits__item-capture a:hover {
+        color: rgba(221, 164, 7, 0.87);
     }
     .benefits__date {
         width: 300px;
@@ -1060,7 +1146,7 @@ img[alt="vkontakte"] {
         height: auto;
     }
     .hero__figure {
-        width: 100%;
+        width: 60%;
         height: 100%;
         margin: 0 auto;
     }
@@ -1071,7 +1157,7 @@ img[alt="vkontakte"] {
         font-size: 28px;
         line-height: 25px;
         text-align: center;
-        margin-top: 15px;
+        margin-top: 30px;
     }
     .hero__subtitle {
         font-size: 16px;
@@ -1122,6 +1208,27 @@ img[alt="vkontakte"] {
         display: block;
         white-space: normal;
     }
+    .skills__format {
+        width: 130px;
+        margin: 5px auto 0 auto;
+        height: 22px;
+    }
+    h2.skills__list {
+        text-align: center;
+        font-size: 22px;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    .skills__buttons {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .skills__buttons button {
+        height: 45px;
+        font-size: 20px;
+    }
     .tab {
         text-align: center;
         display: block;
@@ -1152,8 +1259,8 @@ img[alt="vkontakte"] {
         display: block;
         line-height: 20px;
         font-size: 16px;
-        margin-top: 50px;
-        padding: 10px 0 20px;
+        margin-top: 30px;
+        padding: 10px 0 10px;
     }
     section.benefits {
         margin-bottom: 30px;
@@ -1190,6 +1297,26 @@ img[alt="vkontakte"] {
         cursor: pointer;
         margin: 0 auto;
     }
+    .benefits__date-title {
+        width: 330px;
+        height: 260px;
+        font-size: 22px;
+        padding-top: 105px;
+    }
+    .benefits__date-title.benefits__date-active {
+        margin-top: -30px;
+        width: 330px;
+        height: 260px;
+    }
+    .benefits__date-title:hover {
+        margin-top: 0;
+    }
+    .benefits__date-title.benefits__date-active:hover {
+        margin-top: -30px;
+    }
+    .benefits__item-capture a:hover {
+        color: rgba(221, 164, 7, 0.87);
+    }
     .benefits__date img {
         width: 330px;
         height: 260px;
@@ -1223,7 +1350,7 @@ img[alt="vkontakte"] {
     }
     .benefits__item-capture {
         font-size: 16px;
-        line-height: 15px;
+        line-height: 25px;
         margin-bottom: 20px;
     }
     .footer {
@@ -1252,7 +1379,7 @@ img[alt="vkontakte"] {
         color: #E1E1E1;
     }
     section.hero {
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
     .hero__conteiner  {
         padding: 0 50px;
@@ -1262,8 +1389,8 @@ img[alt="vkontakte"] {
         height: 330px;
     }
     .hero__figure {
-        width: 400px;
-        height: 300px;
+        width: 40%;
+        height: 100%;
     }
     .hero__title {
         font-size: 36px;
@@ -1271,7 +1398,7 @@ img[alt="vkontakte"] {
     }
     .hero__subtitle {
         font-size: 20px;
-        line-height: 25px;
+        line-height: 30px;
     }
     .hero__button {
         font-size: 14px;
@@ -1300,7 +1427,20 @@ img[alt="vkontakte"] {
     }
     .feature__list {
         width: 100%;
-        height: 25px;
+        height: 36px;
+    }
+    .skills__format {
+        width: 100%;
+        height: 44px;
+      }
+    .skills__buttons {
+        width: 70%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .skills__buttons button {
+        height: 45px;
+        font-size: 20px;
     }
     .tab {
         font-size: 20px;
@@ -1341,6 +1481,26 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin-bottom: 20px;
     }
+    .benefits__date-title {
+        width: 270px;
+        height: 200px;
+        font-size: 22px;
+        padding-top: 75px;
+    }
+    .benefits__date-title.benefits__date-active {
+        margin-top: -30px;
+        width: 270px;
+        height: 200px;
+    }
+    .benefits__date-title:hover {
+        margin-top: 0;
+    }
+    .benefits__date-title.benefits__date-active:hover {
+        margin-top: -30px;
+    }
+    .benefits__item-capture a:hover {
+        color: rgba(221, 164, 7, 0.87);
+    }
     .benefits__date img {
         width: 270px;
         height: 200px;
@@ -1374,6 +1534,7 @@ img[alt="vkontakte"] {
         font-size: 14px;
         line-height: 25px;
         width: 290px;
+        padding-bottom: 20px;
     }
     .footer {
         padding: 25px 0;
