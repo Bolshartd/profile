@@ -85,6 +85,7 @@ p {
 
 .hero__conteiner {
     margin-top: 100px;
+    overflow: hidden;
 }
 
 .hero__content {
@@ -119,12 +120,14 @@ p {
     color: #424A57;
 }
 
-
 .hero__subtitle {
     margin-top: 32px;
     font-weight: 400;
     font-size: 22px;
     line-height: 38px;
+}
+
+.hero__subtitle.clean {
     white-space: pre-wrap;
 }
 
@@ -151,7 +154,7 @@ p {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
     cursor: pointer;
     transition: background-color 0.15s;
-    
+
 }
 
 .hero__button:hover {
@@ -176,10 +179,10 @@ p {
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.15s;
-    border: 4px solid rgba(221, 164, 7, 0.87);
+    border: 2px solid rgba(221, 164, 7, 0.87);
 }
 
-.hero__dot:hover, 
+.hero__dot:hover,
 .hero__dot.active {
     background-color: rgba(221, 164, 7, 0.87);
 }
@@ -204,20 +207,24 @@ p {
     align-items: flex-start;
     white-space: nowrap;
 }
+
 .skills__format {
     width: 1240px;
     height: 44px;
     border-bottom: 1px solid #424A5780;
     margin-bottom: 20px;
 }
+
 .skills__buttons {
     width: 70%;
 }
+
 h2.skills__list {
     font-weight: 700;
     font-size: 24px;
     color: #424A5780;
 }
+
 .skills__buttons button {
     height: 50px;
     width: auto;
@@ -230,7 +237,7 @@ h2.skills__list {
     border: 1px solid #93979e;
 }
 
-.tab + .tab {
+.tab+.tab {
     margin-left: 32px;
 }
 
@@ -242,12 +249,13 @@ h2.skills__list {
     transition: color 0.15s;
 }
 
-.tab:hover, 
+.tab:hover,
 .tab.active {
     color: rgba(221, 164, 7, 0.87);
     border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     padding-bottom: 16px;
 }
+
 .tabs__title {
     line-height: 2;
     margin-top: 20px;
@@ -297,7 +305,7 @@ h2.skills__list {
     display: block;
 }
 
-.benefits__item + .benefits__item {
+.benefits__item+.benefits__item {
     margin-left: 20px;
 }
 
@@ -305,7 +313,7 @@ h2.skills__list {
     margin-bottom: 24px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 44px;
+    line-height: 20px;
     color: #424A57;
 }
 
@@ -315,11 +323,13 @@ h2.skills__list {
     line-height: 28px;
     color: rgba(0, 0, 0, 0.87);
 }
+
 .benefits__item-capture a {
     color: rgba(221, 164, 7, 0.87);
     font-weight: bold;
     text-decoration: none;
 }
+
 .benefits__item-capture a:hover {
     color: rgba(230, 191, 86, 0.87);
 }
@@ -328,6 +338,7 @@ h2.skills__list {
     padding: 47px 0;
     background-color: rgba(66, 74, 87, 0.5);
 }
+
 .footer__conteiner {
     display: flex;
     justify-content: space-between;
@@ -344,6 +355,7 @@ h2.skills__list {
 .footer__social {
     display: inline-flex;
 }
+
 .footer__icon {
     display: inline-flex;
     justify-content: center;
@@ -361,7 +373,7 @@ h2.skills__list {
     background-color: rgba(221, 164, 7, 0.87);
 }
 
-.footer__icon + .footer__icon {
+.footer__icon+.footer__icon {
     margin-left: 24px;
 }
 
@@ -372,226 +384,278 @@ h2.skills__list {
 img[alt="vkontakte"] {
     scale: 65%;
 }
+
 @media (min-width: 0px) and (max-width: 575.98px) {
     .app__header {
         height: 80px;
     }
+
     .conteiner {
         padding: 0 20px;
     }
+
     .header__logo {
         height: 80px;
     }
+
     .header__logo-img {
         width: auto;
         height: 50px;
         margin-top: 15px;
     }
+
     .header__menu-link:hover {
         color: #E1E1E1;
     }
+
     .menu-burger__header {
-		position: relative;
-		width: 30px;
-		height: 30px;
-		display: block;
-		margin-left: 0px;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: block;
+        margin-left: 0px;
         margin-right: 10px;
         cursor: pointer;
-	}
-	.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
-		height: 2px;
-		width: 100%;
-		position: absolute;
-		background: #fff;
-		margin: 0 auto;
-	}
-	.menu-burger__header span{
-		top: 14px;
-	}
-	.menu-burger__header:after, .menu-burger__header:before{
-		content: '';
-	}
-	.menu-burger__header:after{
-		bottom: 5px;
-	}
-	.menu-burger__header:before{
-		top: 5px;
-	}
-	.menu-burger__header.open-menu span {
-		opacity:0; 
-		transition: 0.2s; 
-	}
-	.menu-burger__header.open-menu:before {
-		transform: rotate(38deg);
-		top: 14px;
-		transition: 0.4s;
+    }
+
+    .menu-burger__header span,
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        background: #fff;
+        margin: 0 auto;
+    }
+
+    .menu-burger__header span {
+        top: 14px;
+    }
+
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        content: '';
+    }
+
+    .menu-burger__header:after {
+        bottom: 5px;
+    }
+
+    .menu-burger__header:before {
+        top: 5px;
+    }
+
+    .menu-burger__header.open-menu span {
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .menu-burger__header.open-menu:before {
+        transform: rotate(38deg);
+        top: 14px;
+        transition: 0.4s;
         background: rgba(230, 191, 86, 0.87);
-	}
-	.menu-burger__header.open-menu:after {
-		transform: rotate(-38deg);
-		bottom: 14px;
-		transition: 0.4s;
+    }
+
+    .menu-burger__header.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 14px;
+        transition: 0.4s;
         background: rgba(230, 191, 86, 0.87);
-	}
+    }
+
     .header__menu {
-		position: fixed;
-		top:100px;
-		background: #424A57;
-		box-shadow: #ccc;
-		width: 50%;
-		height: 100%;
-		box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
-		transition: all 0.4s ease;
-		right:-100%;
-		overflow: auto; 
-		padding: 20px 10px 40px 10px;
-	}
+        position: fixed;
+        top: 100px;
+        background: #424A57;
+        box-shadow: #ccc;
+        width: 50%;
+        height: 100%;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+        transition: all 0.4s ease;
+        right: -100%;
+        overflow: auto;
+        padding: 20px 10px 40px 10px;
+    }
+
     .header__menu-list {
         display: block;
     }
-    .header__menu.open-menu{
-		right: 0;
-	}
-	.header__menu-list li {
-		margin: 20px 10px 0 10px;
-	}
+
+    .header__menu.open-menu {
+        right: 0;
+    }
+
+    .header__menu-list li {
+        margin: 20px 10px 0 10px;
+    }
+
     .header__menu-link {
         font-size: 18px;
         margin-left: 0px;
         line-height: 30px;
-      }
+    }
+
     .header__menu {
         top: 80px;
         padding: 10px 10px 40px 10px;
     }
+
     .fixed-page {
-		overflow: hidden;
-	}
+        overflow: hidden;
+    }
+
     section.hero {
         height: auto;
         margin-bottom: 20px;
     }
+
     .hero {
         padding: 80px 0 20px;
     }
+
     .hero__conteiner {
         margin-top: 0px;
     }
+
     .hero__content {
         display: block;
         margin-top: 30px;
         height: auto;
     }
+
     .hero__figure {
         width: 70%;
         height: 100%;
         margin: 0 auto 20px;
     }
+
     .hero__text {
         width: 100%;
     }
+
     .hero__title {
         font-size: 18px;
         line-height: 15px;
         text-align: center;
         margin-top: 10px;
     }
+
     .hero__subtitle {
         font-size: 12px;
         line-height: 15px;
         margin-top: 10px;
         text-align: center;
     }
+
     .hero__button {
         font-size: 8px;
         display: block;
         width: 130px;
-        margin: 10px auto 0 ;
+        margin: 10px auto 0;
         padding: 5px;
     }
+
     .hero__dots {
         margin-top: 20px;
     }
+
     .hero__dot {
         display: inline-block;
-        width: 12px;
-        height: 12px;
         border: 1px solid rgba(221, 164, 7, 0.87);
     }
+
     .hero__button:hover {
         background-color: rgba(221, 164, 7, 0.87);
     }
-    .hero__dot:hover, .hero__dot.active {
+
+    .hero__dot:hover,
+    .hero__dot.active {
         background-color: #fff;
     }
+
     .hero__dot.active {
         background-color: rgba(221, 164, 7, 0.87);
     }
+
     section.features {
         margin-bottom: 10px;
     }
+
     .features__title {
         text-align: center;
         font-size: 18px;
         line-height: 15px;
         margin-bottom: 10px;
     }
+
     .feature__list {
         width: 100%;
         border-bottom: none;
     }
+
     .features__tabs {
         width: 100%;
         display: block;
         white-space: normal;
     }
+
     .skills__format {
         width: 130px;
         margin: 5px auto 0 auto;
         height: 22px;
     }
+
     h2.skills__list {
         text-align: center;
         font-size: 14px;
         line-height: 15px;
         margin-bottom: 10px;
     }
+
     .skills__buttons {
         width: 100%;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
     .skills__buttons button {
         height: 30px;
         font-size: 12px;
     }
+
     .tab {
         text-align: center;
         display: block;
         height: 22px;
         font-size: 14px;
     }
-    .tab + .tab {
+
+    .tab+.tab {
         margin-left: 0;
     }
+
     .tab.one {
         width: 130px;
         margin: 5px auto 0 auto;
     }
+
     .tab.two {
         width: 220px;
         margin: 5px auto 0 auto;
     }
+
     .tab:hover {
         color: #424A5780;
         border-bottom: none;
     }
+
     .tab.active {
         color: rgba(221, 164, 7, 0.87);
         border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
+
     .tabs__title {
         text-align: center;
         display: block;
@@ -601,49 +665,60 @@ img[alt="vkontakte"] {
         margin-bottom: 20px;
         padding: 0;
     }
+
     section.benefits {
         margin-bottom: 10px;
     }
+
     .benefits__title {
         text-align: center;
         font-size: 18px;
         line-height: 15px;
         margin-bottom: 20px;
     }
+
     .benefits__list {
         display: block;
         margin-bottom: 0px;
         height: auto;
     }
+
     .benefits__item {
         width: auto;
         text-align: center;
     }
-    .benefits__item + .benefits__item {
+
+    .benefits__item+.benefits__item {
         margin-left: 0px;
     }
+
     .benefits__date-title {
         width: 200px;
         height: 160px;
         font-size: 18px;
         padding-top: 55px;
     }
-    .benefits__date-title.benefits__date-active  {
+
+    .benefits__date-title.benefits__date-active {
         margin-top: -30px;
         width: 200px;
         height: 160px;
         font-size: 18px;
         padding-top: 55px;
     }
+
     .benefits__date-title:hover {
         margin-top: 0;
     }
+
     .benefits__date-title.benefits__date-active:hover {
         margin-top: -30px;
     }
+
     .benefits__item-capture a:hover {
         color: rgba(221, 164, 7, 0.87);
     }
+
     .benefits__date {
         width: 200px;
         height: 160px;
@@ -658,10 +733,12 @@ img[alt="vkontakte"] {
         cursor: pointer;
         margin: 0 auto;
     }
+
     .benefits__date-active {
         width: 220px;
         z-index: 21;
     }
+
     .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
@@ -670,6 +747,7 @@ img[alt="vkontakte"] {
         font-weight: bold;
         font-size: 12px;
     }
+
     .benefits__date img {
         width: 200px;
         height: 160px;
@@ -679,9 +757,11 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin: 0 auto 20px;
     }
+
     .benefits__date-active img {
         margin-top: -30px;
     }
+
     .benefits__item-title {
         height: auto;
         font-size: 14px;
@@ -690,249 +770,306 @@ img[alt="vkontakte"] {
         margin-top: 0px;
         padding: 20px 10px 10px;
     }
+
     .benefits__item-capture {
         font-size: 10px;
         line-height: 15px;
         margin-bottom: 10px;
     }
+
     .footer {
         padding: 10px 0;
     }
+
     .footer__icon {
         width: 25px;
         height: 25px;
     }
+
     .footer__icon:hover {
         background-color: #FFFFFF;
-    }   
+    }
+
     .footer__icon:active {
         background-color: #FFFFFF;
     }
+
     .footer__copyright {
         font-size: 12px;
     }
-    .footer__icon + .footer__icon {
+
+    .footer__icon+.footer__icon {
         margin-left: 20px;
     }
-    
+
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .app__header {
         height: 80px;
     }
+
     .header__conteiner {
         height: 80px;
     }
+
     .header__logo {
         height: 80px;
     }
+
     .header__logo-img {
         width: auto;
         height: 60px;
         margin-top: 10px;
     }
+
     .header__menu-link:hover {
         color: #E1E1E1;
     }
+
     .menu-burger__header {
-		position: relative;
-		width: 40px;
-		height: 35px;
-		display: block;
-		margin-left: 10px;
+        position: relative;
+        width: 40px;
+        height: 35px;
+        display: block;
+        margin-left: 10px;
         cursor: pointer;
-	   }
-	.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
-		height: 2px;
-		width: 100%;
-		position: absolute;
-		background: #fff;
-		margin: 0 auto;
-	}
-	.menu-burger__header span{
-		top: 16px;
+    }
+
+    .menu-burger__header span,
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        background: #fff;
+        margin: 0 auto;
+    }
+
+    .menu-burger__header span {
+        top: 16px;
         transition: 0.4s;
-	}
-	.menu-burger__header:after, .menu-burger__header:before{
-		content: '';
-	}
-	.menu-burger__header:after{
-		bottom: 5px;
+    }
+
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        content: '';
+    }
+
+    .menu-burger__header:after {
+        bottom: 5px;
         transition: 0.4s;
-	}
-	.menu-burger__header:before{
-		top: 5px;
+    }
+
+    .menu-burger__header:before {
+        top: 5px;
         transition: 0.4s;
-	}
-	.menu-burger__header.open-menu span {
-		opacity:0; 
-		transition: 0.2s;
-	}
-	.menu-burger__header.open-menu:before {
-		transform: rotate(38deg);
-		top: 16px;
-		transition: 0.4s;
+    }
+
+    .menu-burger__header.open-menu span {
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .menu-burger__header.open-menu:before {
+        transform: rotate(38deg);
+        top: 16px;
+        transition: 0.4s;
         background: rgba(230, 191, 86, 0.87);
-	}
-	.menu-burger__header.open-menu:after {
-		transform: rotate(-38deg);
-		bottom: 16px;
-		transition: 0.4s;
+    }
+
+    .menu-burger__header.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 16px;
+        transition: 0.4s;
         background: rgba(230, 191, 86, 0.87);
-	}
+    }
+
     .header__menu {
-		position: fixed;
-		top:80px;
-		background: #424A57;
-		box-shadow: #ccc;
-		width: 50%;
-		height: 100%;
-		box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
-		transition: all 0.4s ease;
-		right:-100%;
-		overflow: auto; 
-		padding: 20px 10px 40px 10px;
-	}
+        position: fixed;
+        top: 80px;
+        background: #424A57;
+        box-shadow: #ccc;
+        width: 50%;
+        height: 100%;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+        transition: all 0.4s ease;
+        right: -100%;
+        overflow: auto;
+        padding: 20px 10px 40px 10px;
+    }
+
     .header__menu-list {
         display: block;
     }
+
     .header__menu-list li {
-		margin: 20px 0px 20px 0px;
-	}
+        margin: 20px 0px 20px 0px;
+    }
+
     .header__menu-link {
         font-size: 18px;
     }
-    .header__menu.open-menu{
-		right: 0;
-	}
+
+    .header__menu.open-menu {
+        right: 0;
+    }
+
     .fixed-page {
-		overflow: hidden;
-	}
+        overflow: hidden;
+    }
+
     section.hero {
         height: auto;
         margin-bottom: 20px;
     }
+
     .hero {
         padding: 80px 0 20px;
     }
+
     .hero__conteiner {
         margin-top: 30px;
     }
+
     .hero__content {
         display: block;
         margin-top: 30px;
         height: auto;
     }
+
     .hero__figure {
         width: 70%;
         height: 100%;
         margin: 0 auto;
     }
+
     .hero__text {
         width: 100%;
     }
+
     .hero__title {
         font-size: 24px;
         line-height: 25px;
         text-align: center;
         margin-top: 15px;
     }
+
     .hero__subtitle {
         font-size: 16px;
         line-height: 20px;
         margin-top: 10px;
         text-align: center;
     }
+
     .hero__button {
         font-size: 10px;
         display: block;
         width: 150px;
-        margin: 20px auto 0 ;
+        margin: 20px auto 0;
         padding: 10px;
     }
+
     .hero__dots {
         margin-top: 20px;
     }
+
     .hero__dot {
         display: inline-block;
-        width: 16px;
-        height: 16px;
         border: 2px solid rgba(221, 164, 7, 0.87);
     }
+
     .hero__button:hover {
         background-color: rgba(221, 164, 7, 0.87);
     }
-    .hero__dot:hover, .hero__dot.active {
+
+    .hero__dot:hover,
+    .hero__dot.active {
         background-color: #fff;
     }
+
     .hero__dot.active {
         background-color: rgba(221, 164, 7, 0.87);
     }
+
     section.features {
         margin-bottom: 0px;
     }
+
     .features__title {
         text-align: center;
         font-size: 24px;
         line-height: 20px;
         margin-bottom: 20px;
     }
+
     .feature__list {
         width: 100%;
         border-bottom: none;
     }
+
     .features__tabs {
         width: 100%;
         display: block;
         white-space: normal;
     }
+
     .skills__format {
         width: 130px;
         margin: 5px auto 0 auto;
         height: 22px;
     }
+
     h2.skills__list {
         text-align: center;
         font-size: 18px;
         line-height: 15px;
         margin-bottom: 10px;
     }
+
     .skills__buttons {
         width: 100%;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 20px;
     }
+
     .skills__buttons button {
         height: 40px;
         font-size: 14px;
     }
+
     .tab {
         text-align: center;
         display: block;
         height: 22px;
         font-size: 18px;
     }
-    .tab + .tab {
+
+    .tab+.tab {
         margin-left: 0;
     }
+
     .tab.one {
         width: 100px;
         margin: 10px auto;
     }
+
     .tab.two {
         width: 290px;
         margin: 10px auto;
     }
+
     .tab:hover {
         color: #424A5780;
         border-bottom: none;
     }
+
     .tab.active {
         color: rgba(221, 164, 7, 0.87);
         border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
+
     .tabs__title {
         text-align: center;
         display: block;
@@ -941,47 +1078,58 @@ img[alt="vkontakte"] {
         margin-top: 20px;
         padding: 10px 0 10px;
     }
+
     section.benefits {
         margin-bottom: 30px;
     }
+
     .benefits__title {
         text-align: center;
         font-size: 24px;
         line-height: 20px;
         margin-bottom: 20px;
     }
+
     .benefits__list {
         display: block;
         margin-bottom: 0px;
         height: auto;
     }
+
     .benefits__item {
         width: auto;
         text-align: center;
     }
-    .benefits__item + .benefits__item {
+
+    .benefits__item+.benefits__item {
         margin-left: 0px;
     }
+
     .benefits__date-title {
         width: 300px;
         height: 260px;
         font-size: 22px;
         padding-top: 105px;
     }
+
     .benefits__date-title.benefits__date-active {
         margin-top: -30px;
         width: 300px;
         height: 260px;
     }
+
     .benefits__date-title:hover {
         margin-top: 0;
     }
+
     .benefits__date-title.benefits__date-active:hover {
         margin-top: -30px;
     }
+
     .benefits__item-capture a:hover {
         color: rgba(221, 164, 7, 0.87);
     }
+
     .benefits__date {
         width: 300px;
         height: 260px;
@@ -996,6 +1144,7 @@ img[alt="vkontakte"] {
         cursor: pointer;
         margin: 0 auto;
     }
+
     .benefits__date img {
         width: 300px;
         height: 260px;
@@ -1005,13 +1154,16 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin: 0 auto 30px;
     }
+
     .benefits__date-active img {
         margin-top: -30px;
     }
+
     .benefits__date-active {
         width: 320px;
         z-index: 21;
     }
+
     .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
@@ -1020,6 +1172,7 @@ img[alt="vkontakte"] {
         font-weight: bold;
         font-size: 15px;
     }
+
     .benefits__item-title {
         height: 35px;
         font-size: 19px;
@@ -1027,24 +1180,30 @@ img[alt="vkontakte"] {
         margin-bottom: 0;
         margin-top: 20px;
     }
+
     .benefits__item-capture {
         font-size: 14px;
         line-height: 15px;
         margin-bottom: 20px;
     }
+
     .footer {
         padding: 20px 0;
     }
+
     .footer__icon {
         width: 30px;
         height: 30px;
     }
+
     .footer__icon:hover {
         background-color: #FFFFFF;
-    }   
+    }
+
     .footer__icon:active {
         background-color: #FFFFFF;
     }
+
     .footer__copyright {
         font-size: 16px;
     }
@@ -1056,204 +1215,252 @@ img[alt="vkontakte"] {
         height: 70px;
         margin-top: 15px;
     }
+
     .header__menu-link:hover {
         color: #E1E1E1;
     }
+
     .menu-burger__header {
-		position: relative;
-		width: 40px;
-		height: 35px;
-		display: block;
-		margin-left: 10px;
+        position: relative;
+        width: 40px;
+        height: 35px;
+        display: block;
+        margin-left: 10px;
         cursor: pointer;
-	   }
-	.menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
-		height: 2px;
-		width: 100%;
-		position: absolute;
-		background: #fff;
-		margin: 0 auto;
-	}
-	.menu-burger__header span{
-		top: 16px;
+    }
+
+    .menu-burger__header span,
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        background: #fff;
+        margin: 0 auto;
+    }
+
+    .menu-burger__header span {
+        top: 16px;
         transition: 0.4s;
-	}
-	.menu-burger__header:after, .menu-burger__header:before{
-		content: '';
-	}
-	.menu-burger__header:after{
-		bottom: 5px;
+    }
+
+    .menu-burger__header:after,
+    .menu-burger__header:before {
+        content: '';
+    }
+
+    .menu-burger__header:after {
+        bottom: 5px;
         transition: 0.4s;
-	}
-	.menu-burger__header:before{
-		top: 5px;
+    }
+
+    .menu-burger__header:before {
+        top: 5px;
         transition: 0.4s;
-	}
-	.menu-burger__header.open-menu span {
-		opacity:0; 
-		transition: 0.2s;
-	}
-	.menu-burger__header.open-menu:before {
-		transform: rotate(38deg);
-		top: 16px;
-		transition: 0.4s;
+    }
+
+    .menu-burger__header.open-menu span {
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .menu-burger__header.open-menu:before {
+        transform: rotate(38deg);
+        top: 16px;
+        transition: 0.4s;
         background: rgba(230, 191, 86, 0.87);
-	}
-	.menu-burger__header.open-menu:after {
-		transform: rotate(-38deg);
-		bottom: 16px;
-		transition: 0.4s;
+    }
+
+    .menu-burger__header.open-menu:after {
+        transform: rotate(-38deg);
+        bottom: 16px;
+        transition: 0.4s;
         background: rgba(230, 191, 86, 0.87);
-	}
+    }
+
     .header__menu {
-		position: fixed;
-		top:100px;
-		background: #424A57;
-		box-shadow: #ccc;
-		width: 50%;
-		height: 100%;
-		box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
-		transition: all 0.4s ease;
-		right:-100%;
-		overflow: auto; 
-		padding: 20px 10px 40px 10px;
-	}
+        position: fixed;
+        top: 100px;
+        background: #424A57;
+        box-shadow: #ccc;
+        width: 50%;
+        height: 100%;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.37);
+        transition: all 0.4s ease;
+        right: -100%;
+        overflow: auto;
+        padding: 20px 10px 40px 10px;
+    }
+
     .header__menu-list {
         display: block;
     }
+
     .header__menu-list li {
-		margin: 20px 0px 20px 0px;
-	}
+        margin: 20px 0px 20px 0px;
+    }
+
     .header__menu-link {
         font-size: 22px;
     }
-    .header__menu.open-menu{
-		right: 0;
-	}
+
+    .header__menu.open-menu {
+        right: 0;
+    }
+
     .fixed-page {
-		overflow: hidden;
-	}
+        overflow: hidden;
+    }
+
     section.hero {
         height: auto;
         margin-bottom: 30px;
     }
+
     .hero__conteiner {
         margin-top: 30px;
     }
+
     .hero__content {
         display: block;
         margin-top: 30px;
         height: auto;
     }
+
     .hero__figure {
         width: 60%;
         height: 100%;
         margin: 0 auto;
     }
+
     .hero__text {
         width: 100%;
     }
+
     .hero__title {
         font-size: 28px;
         line-height: 25px;
         text-align: center;
         margin-top: 30px;
     }
+
     .hero__subtitle {
         font-size: 16px;
         line-height: 20px;
         margin-top: 10px;
         text-align: center;
     }
+
     .hero__button {
         font-size: 10px;
         display: block;
         width: 150px;
-        margin: 20px auto 0 ;
+        margin: 20px auto 0;
         padding: 10px;
     }
+
     .hero__dots {
         margin-top: 20px;
     }
+
     .hero__dot {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 27px;
+        height: 27px;
         border: 2px solid rgba(221, 164, 7, 0.87);
     }
+
     .hero__button:hover {
         background-color: rgba(221, 164, 7, 0.87);
     }
-    .hero__dot:hover, .hero__dot.active {
+
+    .hero__dot:hover,
+    .hero__dot.active {
         background-color: #fff;
     }
+
     .hero__dot.active {
         background-color: rgba(221, 164, 7, 0.87);
     }
+
     section.features {
         margin-bottom: 0px;
     }
+
     .features__title {
         text-align: center;
         font-size: 28px;
         line-height: 20px;
         margin-bottom: 20px;
     }
+
     .feature__list {
         width: 100%;
         border-bottom: none;
     }
+
     .features__tabs {
         width: 100%;
         display: block;
         white-space: normal;
     }
+
     .skills__format {
         width: 130px;
         margin: 5px auto 0 auto;
         height: 22px;
     }
+
     h2.skills__list {
         text-align: center;
         font-size: 22px;
         line-height: 15px;
         margin-bottom: 10px;
     }
+
     .skills__buttons {
         width: 100%;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
     }
+
     .skills__buttons button {
         height: 45px;
         font-size: 20px;
     }
+
     .tab {
         text-align: center;
         display: block;
         height: 26px;
         font-size: 22px;
     }
-    .tab + .tab {
+
+    .tab+.tab {
         margin-left: 0;
     }
+
     .tab.one {
         width: 130px;
         margin: 10px auto;
     }
+
     .tab.two {
         width: 350px;
         margin: 10px auto;
     }
+
     .tab:hover {
         color: #424A5780;
         border-bottom: none;
     }
+
     .tab.active {
         color: rgba(221, 164, 7, 0.87);
         border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
+
     .tabs__title {
         text-align: center;
         display: block;
@@ -1262,27 +1469,33 @@ img[alt="vkontakte"] {
         margin-top: 30px;
         padding: 10px 0 10px;
     }
+
     section.benefits {
         margin-bottom: 30px;
     }
+
     .benefits__title {
         text-align: center;
         font-size: 28px;
         line-height: 20px;
         margin-bottom: 20px;
     }
+
     .benefits__list {
         display: block;
         margin-bottom: 0px;
         height: auto;
     }
+
     .benefits__item {
         width: auto;
         text-align: center;
     }
-    .benefits__item + .benefits__item {
+
+    .benefits__item+.benefits__item {
         margin-left: 0px;
     }
+
     .benefits__date {
         width: 330px;
         height: 260px;
@@ -1297,26 +1510,32 @@ img[alt="vkontakte"] {
         cursor: pointer;
         margin: 0 auto;
     }
+
     .benefits__date-title {
         width: 330px;
         height: 260px;
         font-size: 22px;
         padding-top: 105px;
     }
+
     .benefits__date-title.benefits__date-active {
         margin-top: -30px;
         width: 330px;
         height: 260px;
     }
+
     .benefits__date-title:hover {
         margin-top: 0;
     }
+
     .benefits__date-title.benefits__date-active:hover {
         margin-top: -30px;
     }
+
     .benefits__item-capture a:hover {
         color: rgba(221, 164, 7, 0.87);
     }
+
     .benefits__date img {
         width: 330px;
         height: 260px;
@@ -1326,13 +1545,16 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin: 0 auto 30px;
     }
+
     .benefits__date-active img {
         margin-top: -30px;
     }
+
     .benefits__date-active {
         width: 350px;
         z-index: 21;
     }
+
     .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
@@ -1341,6 +1563,7 @@ img[alt="vkontakte"] {
         font-weight: bold;
         font-size: 15px;
     }
+
     .benefits__item-title {
         height: 35px;
         font-size: 22px;
@@ -1348,128 +1571,161 @@ img[alt="vkontakte"] {
         margin-bottom: 0;
         margin-top: 20px;
     }
+
     .benefits__item-capture {
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 20px;
     }
+
     .footer {
         padding: 20px 0;
     }
+
     .footer__icon {
         width: 30px;
         height: 30px;
     }
+
     .footer__icon:hover {
         background-color: #FFFFFF;
-    }   
+    }
+
     .footer__icon:active {
         background-color: #FFFFFF;
     }
+
     .footer__copyright {
         font-size: 16px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px){
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .header__menu-link {
         font-size: 20px;
     }
+
     .header__menu-link:hover {
         color: #E1E1E1;
     }
+
     section.hero {
         margin-bottom: 40px;
     }
-    .hero__conteiner  {
+
+    .hero__conteiner {
         padding: 0 50px;
         margin-top: 50px;
     }
+
     .hero__content {
         height: 330px;
     }
+
     .hero__figure {
         width: 40%;
         height: 100%;
     }
+
     .hero__title {
         font-size: 36px;
         line-height: 40px;
     }
+
     .hero__subtitle {
         font-size: 20px;
         line-height: 30px;
     }
+
     .hero__button {
         font-size: 14px;
         margin-top: 32px;
         padding: 18px;
     }
+
     .hero__dot {
-        width: 22px;
-        height: 22px;
+        width: 24px;
+        height: 24px;
     }
+
     .hero__button:hover {
         background-color: rgba(221, 164, 7, 0.87);
     }
-    .hero__dot:hover, .hero__dot.active {
+
+    .hero__dot:hover,
+    .hero__dot.active {
         background-color: #fff;
     }
+
     .hero__dot.active {
         background-color: rgba(221, 164, 7, 0.87);
     }
+
     section.features {
         margin-bottom: 60px;
     }
+
     .features__title {
         font-size: 36px;
         line-height: 40px;
     }
+
     .feature__list {
         width: 100%;
         height: 36px;
     }
+
     .skills__format {
         width: 100%;
         height: 44px;
-      }
+    }
+
     .skills__buttons {
         width: 70%;
         margin-top: 10px;
         margin-bottom: 30px;
     }
+
     .skills__buttons button {
         height: 45px;
         font-size: 20px;
     }
+
     .tab {
         font-size: 20px;
         line-height: 5px;
     }
+
     .tabs__title {
         line-height: 1.5;
         font-size: 16px;
     }
+
     .tab:hover {
         color: #424A5780;
         border-bottom: none;
     }
+
     .tab.active {
         color: rgba(221, 164, 7, 0.87);
         border-bottom: 1px solid rgba(221, 164, 7, 0.87);
     }
+
     section.benefits {
         margin-bottom: 60px;
     }
+
     .benefits__title {
         font-size: 36px;
         line-height: 40px;
     }
+
     .benefits__list {
         margin-bottom: 0px;
         height: auto;
-     }
-     .benefits__date {
+    }
+
+    .benefits__date {
         width: 270px;
         height: 200px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
@@ -1481,26 +1737,32 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin-bottom: 20px;
     }
+
     .benefits__date-title {
         width: 270px;
         height: 200px;
         font-size: 22px;
         padding-top: 75px;
     }
+
     .benefits__date-title.benefits__date-active {
         margin-top: -30px;
         width: 270px;
         height: 200px;
     }
+
     .benefits__date-title:hover {
         margin-top: 0;
     }
+
     .benefits__date-title.benefits__date-active:hover {
         margin-top: -30px;
     }
+
     .benefits__item-capture a:hover {
         color: rgba(221, 164, 7, 0.87);
     }
+
     .benefits__date img {
         width: 270px;
         height: 200px;
@@ -1509,13 +1771,16 @@ img[alt="vkontakte"] {
         z-index: 10;
         transition: all .4s;
     }
+
     .benefits__date-active img {
         margin-top: -30px;
     }
+
     .benefits__date-active {
         width: 290px;
         z-index: 21;
     }
+
     .benefits__date-active::before {
         content: attr(data-name);
         position: absolute;
@@ -1524,31 +1789,38 @@ img[alt="vkontakte"] {
         font-weight: bold;
         font-size: 15px;
     }
+
     .benefits__item-title {
         height: 40px;
         font-size: 16px;
         line-height: 20px;
         margin-bottom: 10px;
     }
+
     .benefits__item-capture {
         font-size: 14px;
         line-height: 25px;
         width: 290px;
         padding-bottom: 20px;
     }
+
     .footer {
         padding: 25px 0;
     }
+
     .footer__copyright {
         font-size: 20px;
     }
+
     .footer__icon {
         width: 40px;
         height: 40px;
     }
+
     .footer__icon:hover {
         background-color: #FFFFFF;
-    }   
+    }
+
     .footer__icon:active {
         background-color: #FFFFFF;
     }
@@ -1567,6 +1839,7 @@ img[alt="vkontakte"] {
         transition: all .4s;
         margin-bottom: 20px;
     }
+
     .benefits__date img {
         width: 334px;
         height: 265px;
@@ -1575,12 +1848,15 @@ img[alt="vkontakte"] {
         z-index: 10;
         transition: all .4s;
     }
+
     .benefits__date:hover img {
         margin-top: -30px;
     }
-    .benefits__date:hover{
+
+    .benefits__date:hover {
         width: 354px;
     }
+
     .benefits__date::before {
         content: attr(data-name);
         position: absolute;
@@ -1588,15 +1864,19 @@ img[alt="vkontakte"] {
         color: rgb(255, 255, 255);
         font-weight: bold;
     }
+
     .benefits__item-title {
         font-size: 18px;
     }
+
     .benefits__item-capture {
         font-size: 16px;
     }
+
     .footer {
         padding: 35px 0;
     }
+
     .benefits__list {
         padding-left: 20px;
     }
