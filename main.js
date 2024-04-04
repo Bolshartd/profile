@@ -56,7 +56,7 @@ const TABS = document.querySelectorAll(".tab");
 const TABS_TITLE = document.querySelector(".tabs__title");
 
 const TABS_TITLES = [
-    TABS_TITLE.textContent,
+    'Python-разработчик (ML, Data Scientist) \nАкадемия Цифрового Образования ООО «Мобильное Электронное Образование», Python-разработчик, май 2023',
     'Есть репозитории на GitHub - https://github.com/Bolshartd.\n\nПримеры репозиториев:\nhttps://github.com/Bolshartd/profile - сайт визитка\nhttps://github.com/Bolshartd/test_parsing - парсинг сайта\nhttps://github.com/Bolshartd/study_task - ML. Развертывание приложения в Docker контейнере. Определение схожести слов по смыслу.\nhttps://github.com/Bolshartd/move_detector - Определение движения на веб камере без спользования ИИ.\nhttps://github.com/Bolshartd/evaluation_quality - Оценка качества лакокрасочного покрытия производственных деталей с использованием ИИ\nhttps://github.com/Bolshartd/covid_analyse - Анализ и кластеризация данных по covid-19',
 ];
 
