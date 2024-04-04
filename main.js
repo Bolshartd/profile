@@ -68,6 +68,7 @@ TABS.forEach((tab, index) => tab.addEventListener('click', () => {
     tab.classList.add('active');
 
     TABS_TITLE.textContent = TABS_TITLES[index];
+    TABS_TITLE.classList.add('clean');
 }));
 
 // benefits images
