@@ -259,7 +259,6 @@ h2.skills__list {
 .tabs__title {
     line-height: 2;
     margin-top: 20px;
-    white-space: pre-wrap;
     display: inline-flex;
     margin-bottom: 20px;
 }
